@@ -1,0 +1,14 @@
+on: [push, pull_request]
+name: Deploy
+jobs:
+  symfony-cloud:
+    name: SymfonyCloud
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Symfony Cloud
+      uses: docker://oskarstark/symfony-cloud-ga
+      with:
+        args: deploy
+        env:
+          SYMFONY_TOKEN: ${{ secrets.SYMFONY_TOKEN }}
