@@ -6,6 +6,8 @@
 
 sh -c "printenv"
 
+sh -c "ls -la"
+
 SYMFONY_ENVIRONMENT="${GITHUB_REF/refs\/head\//}"
 
 sh -c "symfony version"
