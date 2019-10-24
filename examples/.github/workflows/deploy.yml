@@ -11,5 +11,10 @@ jobs:
       with:
         args: deploy
       env:
+        # Get your token here: https://symfony.com/account/security
+        # More infos: https://symfony.com/doc/master/cloud/cookbooks/api_tokens.html
         SYMFONY_TOKEN: ${{ secrets.SYMFONY_TOKEN }}
+
+        # This is needed to link the correct project.
+        # Get it via: symfony project:info command
         SYMFONY_PROJECT_ID: ${{ secrets.SYMFONY_PROJECT_ID }}
