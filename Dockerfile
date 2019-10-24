@@ -9,9 +9,8 @@ LABEL "repository"="http://github.com/oskarstark/symfony-cloud-ga"
 LABEL "homepage"="http://github.com/actions"
 LABEL "maintainer"="Oskar Stark <oskarstark@googlemail.com>"
 
-RUN apk update \
-    && apk add bash \
-    && apk add git
+RUN apk add --no-cache bash \
+    && apk add --no-cache git
 
 RUN wget https://get.symfony.com/cli/installer -O - | bash
 RUN mv /root/.symfony/bin/symfony /usr/local/bin/symfony
