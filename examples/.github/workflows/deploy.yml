@@ -10,5 +10,6 @@ jobs:
       uses: docker://oskarstark/symfony-cloud-ga
       with:
         args: deploy
-        env:
-          SYMFONY_TOKEN: ${{ secrets.SYMFONY_TOKEN }}
+      env:
+        SYMFONY_TOKEN: ${{ secrets.SYMFONY_TOKEN }}
+        SYMFONY_PROJECT_ID: ${{ secrets.SYMFONY_PROJECT_ID }}
