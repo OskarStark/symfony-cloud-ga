@@ -12,5 +12,6 @@ SYMFONY_ENVIRONMENT="${GITHUB_REF/refs\/head\//}"
 
 sh -c "symfony version"
 sh -c "symfony link $SYMFONY_PROJECT_ID"
+sh -c "ls -la"
 sh -c "symfony env:create $SYMFONY_ENVIRONMENT"
 sh -c "symfony $*"
