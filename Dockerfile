@@ -10,7 +10,8 @@ LABEL "homepage"="http://github.com/actions"
 LABEL "maintainer"="Oskar Stark <oskarstark@googlemail.com>"
 
 RUN apk add --no-cache bash \
-    && apk add --no-cache git
+    && apk add --no-cache git \
+    && apk add --no-cache openssh
 
 RUN wget https://get.symfony.com/cli/installer -O - | bash
 RUN mv /root/.symfony/bin/symfony /usr/local/bin/symfony
