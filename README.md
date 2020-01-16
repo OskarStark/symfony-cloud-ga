@@ -1,5 +1,9 @@
 # GithubAction for SymfonyCloud
 
+## ATTENTION
+
+This is currently a **POC** which is **NOT** working right now!
+
 ## Usage
 
 You can use it as a Github Action like this:
