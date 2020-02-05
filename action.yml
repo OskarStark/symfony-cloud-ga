@@ -1,0 +1,15 @@
+# https://help.github.com/en/articles/metadata-syntax-for-github-actions
+
+author: 'OskarStark'
+
+branding:
+    icon: 'check'
+    color: 'blue'
+
+description: 'Deploy to SymfonyCloud via GithubAction.'
+
+name: 'SymfonyCloud'
+
+runs:
+    using: 'docker'
+    image: 'docker://oskarstark/symfony-cloud-ga'
