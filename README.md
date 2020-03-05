@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Symfony Cloud
+    - name: SymfonyCloud
       uses: docker://oskarstark/symfony-cloud-ga
       with:
         args: deploy
@@ -29,7 +29,7 @@ jobs:
 
         # This is needed to link the correct project.
         # Get it via: symfony project:info command
-        SYMFONY_PROJECT_ID: ${{ secrets.SYMFONY_PROJECT_ID }}
+        SYMFONY_PROJECT: xxxxxxxxxxxxx
 ```
 
 **You can copy/paste the .github folder (under examples/) to your project and thats all!**
